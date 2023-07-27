@@ -1,0 +1,239 @@
+body {
+    background-color: #272B30;
+    font-family: "Comfortaa", cursive;
+}
+
+
+
+.top-background {
+    background-image: url(../images/wraper.png);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+
+/* ------------------------------------  Nav Bar  -------------------------------------------- */
+
+
+.my-navbar {
+    background-color: #3A497B;
+    padding: 8px 0px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    box-shadow: 1px 1px 8px 6px #222222;
+    top: 0;
+    z-index: 100;
+}
+
+.my-navbar a,
+.my-navbar h2 {
+    color: white !important;
+}
+
+.my-navbar h2 {
+    margin: 0px !important;
+}
+
+.my-navbar a {
+    font-size: 12px !important;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* ------------------------------------ Loading Section  -------------------------------------------- */
+
+
+#loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #ff0000;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------------------ Home Content  -------------------------------------------- */
+
+
+.my-card {
+    background-color: transparent;
+    color: #FCFDFD;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.my-card:hover {
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+}
+
+.my-card img {
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+    transition-duration: 0.5s;
+}
+
+.my-card:hover img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.my-card:hover .freeBtn {
+    background-color: rgb(0, 102, 255);
+    border-color: rgb(0, 102, 255);
+}
+
+.card-footer {
+    color: #FCFDFD;
+}
+
+.game-name h6 {
+    margin: 0px !important;
+}
+
+.freeBtn {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    background-color: rgb(73, 109, 164);
+    border-color: rgb(73, 109, 164);
+    transition-duration: 0.5s;
+}
+
+.my-card-text {
+    font-size: 14px;
+}
+
+.footerBtn,
+.footerBtn:hover {
+    background-color: #32383E;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+
+/* ------------------------------------ Game Page Content  -------------------------------------------- */
+
+
+#gamePage h3 {
+    color: white;
+}
+
+#gamePage i {
+    font-size: 28px;
+    color: white;
+}
+
+#gamePage #closeBtn {
+    background-color: transparent;
+    border: 0;
+}
+
+#gamePage .gameInfoBody {
+    color: white;
+}
+
+.gameInfoBody h6 {
+    margin: 18px 0px;
+}
+
+.textWithBg {
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #0DCAF0;
+    color: black;
+    padding: 2px 8px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+#showGameBtn,
+#showGameBtn:hover {
+    color: white !important;
+}
+
+#gameTitleTxt {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gameInfoBody h3 {
+        margin-top: 16px;
+    }
+}
+
